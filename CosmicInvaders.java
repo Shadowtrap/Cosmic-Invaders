@@ -16,7 +16,7 @@ import javax.swing.ImageIcon;
 import java.applet.*;
 
 
-public class OspinaMittalProj7 extends JComponent implements KeyListener, MouseListener{
+public class CosmicInvaders extends JComponent implements KeyListener, MouseListener{
     //instance variables
     private int WIDTH;
     private int HEIGHT;
@@ -119,7 +119,7 @@ public class OspinaMittalProj7 extends JComponent implements KeyListener, MouseL
         if(key == 10 && lose == true){
             gui.dispose();
             gameover = true;
-            OspinaMittalProj7 g = new OspinaMittalProj7();
+            CosmicInvaders g = new OspinaMittalProj7();
             g.start(60);
         }
         
@@ -127,7 +127,7 @@ public class OspinaMittalProj7 extends JComponent implements KeyListener, MouseL
         if(key == 10 && win == true){
             gui.dispose();
             gameover = true;
-            OspinaMittalProj7 g = new OspinaMittalProj7();
+            CosmicInvaders g = new OspinaMittalProj7();
             g.start(60);
         }
                                                     
@@ -801,7 +801,7 @@ public class OspinaMittalProj7 extends JComponent implements KeyListener, MouseL
 
     public static void main(String[] args)
     {
-        OspinaMittalProj7 g = new OspinaMittalProj7();
+        CosmicInvaders g = new OspinaMittalProj7();
         g.start(60);
     }
 }
